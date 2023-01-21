@@ -2,6 +2,7 @@ import React from 'react'
 import './Dashboard.css'
 import { useParams, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
+import Page404 from "../Page404/Page404"
 import Activity from "../../component/Rechart/Activity"
 import Sessions from "../../component/Rechart/Sessions"
 import Performance from "../../component/Rechart/Performance"
@@ -46,7 +47,7 @@ function Dashboard() {
     
     <div className='Dashboard'>
         { loading  ?
-            <p>En cours de chargement </p>
+            <p className='error'> User undefined </p>
         : (
             <div>
             <div className='Welcome'>

@@ -6,7 +6,11 @@
 .Grafiques{
     display: flex;
 }
-
+.error{
+    font-size: 36px;
+    text-align: center;
+    color: #FF0101;
+}
             /* Section 1 */ 
 .Welcome{
     margin-left: 40px;
