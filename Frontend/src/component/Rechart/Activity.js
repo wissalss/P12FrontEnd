@@ -46,7 +46,7 @@ const Activity = ({userActivity}) => {
 
             <CartesianGrid strokeDasharray="1"  vertical={false}/>
 
-            <XAxis className='activityXAxis'dataKey="day" tickLine={false}  stroke=" #DEDEDE" tick={{fill:"#9B9EAC", fontWeight:500, fontSize:14}} padding={{ left: -47, right: -48 }} tickMargin={16} />
+            <XAxis className='activityXAxis'dataKey="day" tickLine={false} tickFormatter={(day) => new Date(day).getDate()}  stroke=" #DEDEDE" tick={{fill:"#9B9EAC", fontWeight:500, fontSize:14}} padding={{ left: -47, right: -48 }} tickMargin={16} />
             {/*concerne les dates*/}
 
             <YAxis tickLine={false} orientation="right" axisLine={false} tick={{fill:"#9B9EAC", fontWeight:500, fontSize:14}} tickMargin={45} minTickGap={27}/>
